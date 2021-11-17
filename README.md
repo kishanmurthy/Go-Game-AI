@@ -10,7 +10,7 @@ Go is an abstract strategy board game for two players in which the aim is to sur
 
 ### How to run the game
 
-Call run.sh which will initiate the the game between MiniMax Agent and Random Agent. The Game Host (host.py) keeps track of the game process, gets the next moves from the players in turn, judges if the proposed moves are valid, wipes out the dead stones, and finally judges the winner.
+Calling run.sh will initiate the the game between MiniMax Agent and Random Agent. The Game Host (host.py) keeps track of the game process, gets the next moves from the players in turn, judges if the proposed moves are valid, wipes out the dead stones, and finally judges the winner.
 
 ### Game Rules and Winning Criteria
 
