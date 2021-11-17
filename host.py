@@ -21,7 +21,6 @@ class GO:
         self.X_move = True # X chess plays first
         self.died_pieces = [] # Intialize died pieces to be empty
         self.n_move = 0 # Trace the number of moves
-        self.max_move = n * n - 1 # The max movement of a Go game
         self.komi = n/2 # Komi rule
         self.verbose = False # Verbose only when there is a manual player
 
@@ -306,10 +305,7 @@ class GO:
         :return: boolean indicating whether the game should end.
         '''
 
-        # Case 1: max move reached
-        if self.n_move >= self.max_move:
-            return True
-        # Case 2: two players all pass the move.
+        # two players all pass the move.
         if self.compare_board(self.previous_board, self.board) and action == "PASS":
             return True
         return False
